@@ -1,0 +1,188 @@
+#app/page.tsx
+export default function Page(){
+
+}
+
+#app
+mkdir folders
+cd folders
+touch foo.tsx
+#foo.tsx
+const FolderPage = () => {
+    return (
+        <div>
+            Folder Page
+        </div>
+    );
+};
+
+export delault FolderPage;
+foo.tsx => page.tsx
+#folder
+mkdir folder2 touch page.tsx
+const Folder2Page = () => {
+    return (
+        <div>
+            Folder2 Page
+        </div>
+    );
+}
+export default Folder2Page;
+cd folder touch route.ts
+export function GET() {
+    return Response.json({ foo: "bar" });
+};
+#app
+mkdir auth cd auth mkdir login touch page.tsx
+#page.tsx
+const LoginPage = () => {
+    return (
+        <div>
+            Login Page
+        </div>
+    );
+}
+export default LoginPage;
+#app/auth
+mkdir register touch page.tsx
+#page.tsx
+const RegisterPage = () => {
+    return (
+        <div>
+            Register Page
+        </div>
+    );
+}
+export default RegisterPage;
+#auth touch layout.tsx
+#layout.tsx
+const AuthLayout = () => {
+    return (
+        <div>
+            Auth Layout
+        </div>
+    );
+}
+export default AuthLayout;
+
+#layout.tsx => 2
+const AuthLayout = ({
+    children
+}: {
+    children: React.ReactNode;
+}) => {
+    return (
+        <div>
+            {children}
+        </div>
+    );
+}
+export default AuthLayout;
+
+#layout.tsx => 3
+<div className="flex flex-col gap-y-4">
+    <nav className="p-1 bg-red-500 w-full">
+        Auth Navbar
+    </nav>
+
+const AuthLayout = ({
+    children
+}: {
+    children: React.ReactNode;
+}) => {
+    return (
+        <div className="flex flex-col gap-y-4">
+            <nav className="p-1 bg-red-500 w-full">
+                Auth Navbar
+            </nav>
+            {children}
+        </div>
+    );
+}
+
+export default AuthLayout;
+
+rm -r auth
+mkdir (auth) cd (auth) mkdir login register
+touch (login) page.tsx
+const Page = 
+touch (register) page.tsx
+const Page =
+cd ../
+#(auth) touch layout.tsx
+const AuthLayout = ({
+    children
+}: {
+    children: React.ReactNode;
+}) => {
+    return (
+        <div>
+            {children}
+        </div>
+    );
+}
+export default AuthLayout;
+
+#layout.tsx 2
+<div className = "flex flex-col gap-y-4">
+    <nav className = "p-1 bg-red-500 w-full">
+        Auth Navbar
+    </nav>
+    {children}
+
+const AuthLayout = ({
+    children
+}: {
+    children: React.ReactNode;
+}) => {
+    return (
+        <div className="flex flex-col gap-y-4">
+            <nav className="bg-red-500 w-full">
+                Auth Navbar
+            </nav>
+            {children}
+        </div>
+    );
+}
+export default AuthLayout;
+
+rm -f (auth)
+
+#app
+mkdir test
+cd test
+touch page.tsx
+const TestPage = () => {
+    return (
+        <div>
+            Test Page
+        </div>
+    );
+}
+export default TestPage;
+#page.tsx 1
+cosnt onClick = () => {
+    console.log("Something");
+}
+return (
+    <div onClick={onClick}>
+        Hello Test page
+    </div>
+)
+
+const TestPage = () => {
+    const onClick = () => {
+        console.log("Something");
+    }
+    return (
+        <div onClick={onClick}>
+            Hello Test page
+        </div>
+    )
+}
+export default TestPage;
+
+#page.tsx 2
+await db.users.findMany()
+
+re -f test

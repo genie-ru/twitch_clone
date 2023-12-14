@@ -1,0 +1,26 @@
+npx create-next-app@latest video-twitch
+Yes, Yes, Yes, No, Yes, No
+npm run dev
+http://localhost:3000/
+#app/page.tsx
+<p className="text-red-500 font-bold">Hello</p>
+
+npx shadcn-ui@latest init
+Yes, Default, Neutral, app/globals.css, Yes, tailwind.config.ts, @/components,
+@/lib/utils, Yes, Yes
+
+npm run dev
+
+npx shadcn-ui@latest add button
+#app/page.tsx
+import { Button } from '@/components/ui/button'
+<Button>
+    Click Me
+</Button>
+
+<Button size="lg" variant="outline">
+#components/ui/button.tsx
+variants
+custom: "text-white bg-blue-500"
+<Button size="lg" variant="custom">
+<Button size="lg">
